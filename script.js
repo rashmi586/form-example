@@ -13,16 +13,16 @@ form.addEventListener("submit", function(event){
         name.classList.remove("is-invalid")
     }
     if(!email.value|| !email.validity.valid){
-        name.classList.add("is-invalid")
+        email.classList.add("is-invalid")
     }
     else{
-        name.classList.remove("is-invalid")
+        email.classList.remove("is-invalid")
     }
     if(!message.value){
-        name.classList.add("is-invalid")
+        message.classList.add("is-invalid")
     }
     else{
-        name.classList.remove("is-invalid")
+        message.classList.remove("is-invalid")
     }
     
     if(name.value && email.value && email.validity.valid && message.value){
